@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hto3.EnumHelpers", "Hto3.EnumHelpers\Hto3.EnumHelpers.csproj", "{93F3DDBC-E1DE-4623-B868-B42669090C88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hto3.EnumHelpers.TestNet46", "Hto3.EnumHelpers.TestNet46\Hto3.EnumHelpers.TestNet46.csproj", "{8F6FDD9A-F15A-409C-B5BD-CF0BB9CF6B5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hto3.EnumHelpers.TestNet40", "Hto3.EnumHelpers.TestNet40\Hto3.EnumHelpers.TestNet40.csproj", "{EDC96ED0-3461-4D52-B8CF-F1651E5D702A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A7917F22-7C0B-41DD-A925-57144B68D4AF}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		nuget-logo.png = nuget-logo.png
+		nuget-logo.psd = nuget-logo.psd
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93F3DDBC-E1DE-4623-B868-B42669090C88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F3DDBC-E1DE-4623-B868-B42669090C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F3DDBC-E1DE-4623-B868-B42669090C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93F3DDBC-E1DE-4623-B868-B42669090C88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F6FDD9A-F15A-409C-B5BD-CF0BB9CF6B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F6FDD9A-F15A-409C-B5BD-CF0BB9CF6B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F6FDD9A-F15A-409C-B5BD-CF0BB9CF6B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F6FDD9A-F15A-409C-B5BD-CF0BB9CF6B5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDC96ED0-3461-4D52-B8CF-F1651E5D702A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDC96ED0-3461-4D52-B8CF-F1651E5D702A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDC96ED0-3461-4D52-B8CF-F1651E5D702A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDC96ED0-3461-4D52-B8CF-F1651E5D702A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DE225E0-70A8-4C54-9B55-5DD8BC6BBE05}
+	EndGlobalSection
+EndGlobal

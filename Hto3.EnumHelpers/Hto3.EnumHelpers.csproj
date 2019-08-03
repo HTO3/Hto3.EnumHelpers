@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net40;net45;net46</TargetFrameworks>
+    <Authors>HTO3</Authors>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Company />
+    <PackageProjectUrl>https://github.com/HTO3/Hto3.EnumHelpers</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/HTO3/Hto3.EnumHelpers</RepositoryUrl>
+    <PackageTags>Enum manipulation helpers</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/HTO3/Hto3.EnumHelpers/master/nuget-logo.png</PackageIconUrl>
+    <PackageLicenseUrl>https://github.com/HTO3/Hto3.EnumHelpers/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright>MIT</Copyright>
+    <Description>A set of extension methods for manipulate enums.</Description>
+    <RepositoryType>git</RepositoryType>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <DocumentationFile>bin\Release\Hto3.EnumHelpers.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>
