@@ -11,7 +11,7 @@
     <PackageIconUrl>https://raw.githubusercontent.com/HTO3/Hto3.EnumHelpers/master/nuget-logo.png</PackageIconUrl>
     <PackageLicenseUrl>https://github.com/HTO3/Hto3.EnumHelpers/blob/master/LICENSE</PackageLicenseUrl>
     <Copyright>MIT</Copyright>
-    <Description>A set of extension methods for manipulate enums.</Description>
+    <Description>A set of methods for manipulate enums.</Description>
     <RepositoryType>git</RepositoryType>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
