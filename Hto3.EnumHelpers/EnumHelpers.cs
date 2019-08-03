@@ -9,7 +9,7 @@ namespace Hto3.EnumHelpers
     public static class EnumHelpers
     {
         /// <summary>
-        /// Gets a dictionary containing in its keys the enums and their value, the description text of the enum. The enum must be decorated with <i>DescriptionAttribute</i>.
+        /// Gets a dictionary containing in its keys the enums and their value, the description text of the enum. The enum should be decorated with <i>DescriptionAttribute</i>.
         /// </summary>
         /// <typeparam name="T">The enum type</typeparam>
         /// <returns></returns>
@@ -37,9 +37,9 @@ namespace Hto3.EnumHelpers
         /// <summary>
         /// Parse a string as an enum.
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="value"></param>
-        /// <param name="ignoreCase"></param>
+        /// <typeparam name="T">The enum type</typeparam>
+        /// <param name="value">A string that represent an enum member</param>
+        /// <param name="ignoreCase">If true, case insensitive member identification</param>
         /// <returns></returns>
         public static T Parse<T>(String value, Boolean ignoreCase = false) where T : struct
         {
@@ -49,9 +49,9 @@ namespace Hto3.EnumHelpers
             return (T)Enum.Parse(typeof(T), value, ignoreCase);
         }
         /// <summary>
-        /// Get the enum description. The enum should be decorated with <i>DescriptionAttribute</i> to get a fancy string, otherwise you will get the enum name.
+        /// Get the enum description. The enum should be decorated with <i>DescriptionAttribute</i> to get a fancy description, otherwise you will get the enum name.
         /// </summary>
-        /// <param name="value"></param>
+        /// <param name="value">The enum item</param>
         /// <returns></returns>
         public static String GetDescription(this Enum value)
         {
