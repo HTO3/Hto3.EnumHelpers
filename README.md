@@ -27,7 +27,7 @@ public enum FruitsEnum
 }
 
 //Using GetMembers method
-var fruits = Hto3.EnumHelpers.EnumHelpers.GetMembers<FruitsEnum>();
+var fruits = EnumHelpers.GetMembers<FruitsEnum>();
 
 //Got a dictionary with the members as result
 fruits.Count == 4;
