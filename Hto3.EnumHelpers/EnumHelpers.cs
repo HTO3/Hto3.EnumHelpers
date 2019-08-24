@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
@@ -69,6 +70,31 @@ namespace Hto3.EnumHelpers
             var descriptionAttribute = (DescriptionAttribute)Attribute.GetCustomAttribute(fieldInfo, typeof(DescriptionAttribute));
 
             return descriptionAttribute?.Description ?? value.ToString();
+        }
+        /// <summary>
+        /// Get all combinated flag of a flagable enum.
+        /// </summary>
+        /// <typeparam name="T">The enum type</typeparam>
+        /// <param name="value">A flagable enum</param>
+        /// <returns></returns>
+        public static IEnumerable<T> GetCombinatedFlags<T>(this T value) where T : struct
+        {
+            if (!typeof(T).IsEnum)
+                throw new ArgumentException($"The type '{typeof(T).FullName}' is not an enum.");
+            if (!typeof(T).GetCustomAttributes(false).Any(ca => typeof(FlagsAttribute).IsInstanceOfType(ca)))
+                throw new ArgumentException($"The type '{typeof(T).FullName}' is not a flagable enum.");
+
+            var flagCombination = Convert.ToInt64(value, CultureInfo.InvariantCulture);
+
+            foreach (var item in Enum.GetValues(typeof(T)))
+            {
+                var itemAsNumber = Convert.ToInt64(item, CultureInfo.InvariantCulture);
+
+                if (itemAsNumber == (flagCombination & itemAsNumber))
+                {
+                    yield return (T)item;
+                }
+            }
         }
     }
 }

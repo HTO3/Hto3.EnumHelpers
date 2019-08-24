@@ -69,3 +69,30 @@ public enum FruitsEnum
 FruitsEnum.Apple.GetDescription() == "Apple";
 FruitsEnum.Grape.GetDescription() == "White Grape";
 ```
+
+### GetCombinatedFlags
+
+Get all combinated flag of a flagable enum.
+
+```csharp
+//Assuming this enum declaration
+[Flags]
+public enum FruitsSaladEnum
+{
+    Watermelon = 1,
+    Melon = 2,
+    Pear = 4,
+    [System.ComponentModel.Description("It's a kind of orange?")]
+    Tangerine = 8
+}
+
+//Using the extension method
+var combinatedEnum = FruitsSaladEnum.Melon | FruitsSaladEnum.Pear | FruitsSaladEnum.Watermelon;
+var result = EnumHelpers.GetCombinatedFlags(combinatedEnum).ToArray();
+
+//You will get separated individuals
+result.Length == 3;
+result.Any(r => r == FruitsSaladEnum.Melon);
+result.Any(r => r == FruitsSaladEnum.Pear);
+result.Any(r => r == FruitsSaladEnum.Watermelon);
+```

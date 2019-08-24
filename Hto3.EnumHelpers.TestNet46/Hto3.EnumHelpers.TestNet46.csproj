@@ -53,6 +53,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\FruitsEnum.cs" />
+    <Compile Include="Assets\FruitsSaladEnum.cs" />
+    <Compile Include="GetCombinatedFlags.cs" />
     <Compile Include="GetDescription.cs" />
     <Compile Include="GetMembers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
