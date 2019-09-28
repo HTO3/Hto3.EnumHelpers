@@ -7,6 +7,9 @@ using System.Reflection;
 
 namespace Hto3.EnumHelpers
 {
+    /// <summary>
+    /// Enum helpers
+    /// </summary>
     public static class EnumHelpers
     {
         /// <summary>
