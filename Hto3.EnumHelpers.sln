@@ -13,11 +13,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
+		.travis.yml = .travis.yml
 		LICENSE = LICENSE
 		nuget-logo.kra = nuget-logo.kra
 		nuget-logo.png = nuget-logo.png
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hto3.EnumHelpers.TestCore30", "Hto3.EnumHelpers.TestCore30\Hto3.EnumHelpers.TestCore30.csproj", "{7D63127A-BA49-4241-AB85-926EF74688D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +40,10 @@ Global
 		{EDC96ED0-3461-4D52-B8CF-F1651E5D702A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDC96ED0-3461-4D52-B8CF-F1651E5D702A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDC96ED0-3461-4D52-B8CF-F1651E5D702A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D63127A-BA49-4241-AB85-926EF74688D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D63127A-BA49-4241-AB85-926EF74688D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D63127A-BA49-4241-AB85-926EF74688D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D63127A-BA49-4241-AB85-926EF74688D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
