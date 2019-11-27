@@ -32,5 +32,12 @@ namespace Hto3.EnumHelpers.TestCore30
             //Act - Assert
             Assert.IsNull(UNKNOWN_ENUM_MEMBER.GetDescription());
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void TryGetOfNullValue()
+        {
+            EnumHelpers.GetDescription(null);
+        }
     }
 }
