@@ -49,7 +49,21 @@ namespace Hto3.EnumHelpers.TestCore30
             var NON_ENUM_FLAG = FruitsEnum.Apple;
 
             //Act
-            var result = EnumHelpers.GetCombinatedFlags(NON_ENUM_FLAG).ToArray();
+            EnumHelpers.GetCombinatedFlags(NON_ENUM_FLAG).ToArray();
+
+            //Assert
+            Assert.Fail();
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void IsNotAnEnum()
+        {
+            //Arrange
+            var NON_ENUM = 2;
+
+            //Act
+            EnumHelpers.GetCombinatedFlags(NON_ENUM).ToArray();
 
             //Assert
             Assert.Fail();
