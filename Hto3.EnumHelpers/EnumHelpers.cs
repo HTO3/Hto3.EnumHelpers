@@ -13,7 +13,7 @@ namespace Hto3.EnumHelpers
     public static class EnumHelpers
     {
         /// <summary>
-        /// Gets a dictionary containing in its keys the enums and their value, the description text of the enum. The enum should be decorated with <i>DescriptionAttribute</i>.
+        /// Gets a dictionary containing in its keys the enums and their value the description text of the enum. The enum should be decorated with <i>DescriptionAttribute</i>.
         /// </summary>
         /// <typeparam name="T">The enum type</typeparam>
         /// <returns></returns>

@@ -16,7 +16,7 @@ Helpers methods to handle enums solving common dev problems.
 
 ### GetMembers
 
-Gets a dictionary containing in its keys the enums and their value, the description text of the enum. The enum should be decorated with <i>DescriptionAttribute</i>.
+Gets a dictionary containing in its keys the enums and their value the description text of the enum. The enum should be decorated with <i>DescriptionAttribute</i>.
 
 ```csharp
 //Assuming this enum declaration
