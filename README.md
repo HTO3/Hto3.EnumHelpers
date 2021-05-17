@@ -5,10 +5,11 @@ Hto3.EnumHelpers
 
 #### Nuget Package
 
-|Nuget Package|Build|Test Coverage|
-|---|---|---|
-|[![Hto3.EnumHelpers](https://img.shields.io/nuget/v/Hto3.EnumHelpers.svg)](https://www.nuget.org/packages/Hto3.EnumHelpers/)|[![Build Status](https://travis-ci.org/HTO3/Hto3.EnumHelpers.svg?branch=master)](https://travis-ci.org/HTO3/Hto3.EnumHelpers)|[![codecov](https://codecov.io/gh/HTO3/Hto3.EnumHelpers/branch/master/graph/badge.svg)](https://codecov.io/gh/HTO3/Hto3.EnumHelpers)|
-
+[![License](https://img.shields.io/github/license/HTO3/Hto3.EnumHelpers)](https://github.com/HTO3/Hto3.EnumHelpers/blob/master/LICENSE)
+[![Hto3.EnumHelpers](https://img.shields.io/nuget/v/Hto3.EnumHelpers.svg)](https://www.nuget.org/packages/Hto3.EnumHelpers/)
+[![Downloads](https://img.shields.io/nuget/dt/Hto3.EnumHelpers)](https://www.nuget.org/stats/packages/Hto3.EnumHelpers?groupby=Version)
+[![Build Status](https://travis-ci.org/HTO3/Hto3.EnumHelpers.svg?branch=master)](https://travis-ci.org/HTO3/Hto3.EnumHelpers)
+[![codecov](https://codecov.io/gh/HTO3/Hto3.EnumHelpers/branch/master/graph/badge.svg)](https://codecov.io/gh/HTO3/Hto3.EnumHelpers)
 
 Features
 --------
