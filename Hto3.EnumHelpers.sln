@@ -13,7 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
-		.travis.yml = .travis.yml
 		LICENSE = LICENSE
 		nuget-logo-small.png = nuget-logo-small.png
 		nuget-logo.kra = nuget-logo.kra
@@ -22,6 +21,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hto3.EnumHelpers.TestNet50", "Hto3.EnumHelpers.TestNet50\Hto3.EnumHelpers.TestNet50.csproj", "{7D63127A-BA49-4241-AB85-926EF74688D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{787127BA-4A13-4C5D-BECF-690CCCD69B57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{AD06DE1B-9FF7-4886-860A-760EEA3B16DE}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\publish.yml = .github\workflows\publish.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +54,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{787127BA-4A13-4C5D-BECF-690CCCD69B57} = {A7917F22-7C0B-41DD-A925-57144B68D4AF}
+		{AD06DE1B-9FF7-4886-860A-760EEA3B16DE} = {787127BA-4A13-4C5D-BECF-690CCCD69B57}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3DE225E0-70A8-4C54-9B55-5DD8BC6BBE05}
