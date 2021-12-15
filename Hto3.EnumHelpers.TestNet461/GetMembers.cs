@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Hto3.EnumHelpers.TestNet46.Assets;
+using Hto3.EnumHelpers.TestNet461.Assets;
 
-namespace Hto3.EnumHelpers.TestNet46
+namespace Hto3.EnumHelpers.TestNet461
 {
     [TestClass]
     public class GetMembers

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hto3.EnumHelpers.TestCore30.Assets
+namespace Hto3.EnumHelpers.TestNet461.Assets
 {
     [Flags]
     public enum FruitsSaladEnum

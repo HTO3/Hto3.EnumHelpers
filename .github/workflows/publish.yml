@@ -25,7 +25,7 @@ jobs:
       - run: dotnet test -f net6.0 /p:CollectCoverage=true /p:CoverletOutputFormat=lcov
       - run: curl -s https://codecov.io/bash > codecov
       - run: chmod +x codecov
-      - run: ./codecov -f "Hto3.EnumHelpers.Test/coverage.info" -t ${{secrets.CODECOV_UPLOAD_TOKEN}}
+      - run: ./codecov -f "Hto3.EnumHelpers.TestNet60/coverage.info" -t ${{secrets.CODECOV_UPLOAD_TOKEN}}
   publish:
     name: Nuget Publish
     runs-on: windows-latest

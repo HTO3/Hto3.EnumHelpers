@@ -1,4 +1,4 @@
-﻿using Hto3.EnumHelpers.TestCore30.Assets;
+﻿using Hto3.EnumHelpers.TestNet60.Assets;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hto3.EnumHelpers.TestCore30
+namespace Hto3.EnumHelpers.TestNet60
 {
     [TestClass]
     public class GetDescription

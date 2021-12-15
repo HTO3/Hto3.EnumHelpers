@@ -1,8 +1,8 @@
-﻿using Hto3.EnumHelpers.TestNet40.Assets;
+﻿using System;
+using Hto3.EnumHelpers.TestNet60.Assets;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 
-namespace Hto3.EnumHelpers.TestNet40
+namespace Hto3.EnumHelpers.TestNet60
 {
     [TestClass]
     public class GetMembers
@@ -26,6 +26,17 @@ namespace Hto3.EnumHelpers.TestNet40
             Assert.AreEqual(fruits[FruitsEnum.Banana], EXPECTED_FOR_BANANA);
             Assert.AreEqual(fruits[FruitsEnum.Grape], EXPECTED_FOR_GRAPE);
             Assert.AreEqual(fruits[FruitsEnum.Orange], EXPECTED_FOR_ORANGE);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void IsNotAnEnumType()
+        {
+            //Act
+            EnumHelpers.GetMembers<Int32>();
+
+            //Assert
+            Assert.Fail();
         }
     }
 }

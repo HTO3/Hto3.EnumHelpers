@@ -1,4 +1,4 @@
-﻿using Hto3.EnumHelpers.TestNet46.Assets;
+﻿using Hto3.EnumHelpers.TestNet60.Assets;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hto3.EnumHelpers.TestNet46
+namespace Hto3.EnumHelpers.TestNet60
 {
     [TestClass]
     public class GetCombinatedFlags
@@ -49,7 +49,21 @@ namespace Hto3.EnumHelpers.TestNet46
             var NON_ENUM_FLAG = FruitsEnum.Apple;
 
             //Act
-            var result = EnumHelpers.GetCombinatedFlags(NON_ENUM_FLAG).ToArray();
+            EnumHelpers.GetCombinatedFlags(NON_ENUM_FLAG).ToArray();
+
+            //Assert
+            Assert.Fail();
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void IsNotAnEnum()
+        {
+            //Arrange
+            var NON_ENUM = 2;
+
+            //Act
+            EnumHelpers.GetCombinatedFlags(NON_ENUM).ToArray();
 
             //Assert
             Assert.Fail();

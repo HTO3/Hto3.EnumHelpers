@@ -18,7 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hto3.EnumHelpers.TestNet60", "Hto3.EnumHelpers.TestNet60\Hto3.EnumHelpers.TestNet60.csproj", "{7D63127A-BA49-4241-AB85-926EF74688D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hto3.EnumHelpers.TestNet60", "Hto3.EnumHelpers.TestNet50\Hto3.EnumHelpers.TestNet60.csproj", "{7D63127A-BA49-4241-AB85-926EF74688D6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{787127BA-4A13-4C5D-BECF-690CCCD69B57}"
 EndProject
