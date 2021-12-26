@@ -42,6 +42,13 @@ fruits[FruitsEnum.Grape] == "White Grape";
 fruits[FruitsEnum.Orange] == "Orange range";
 ```
 
+Providing the enum type as a parameter flavor is available too.
+
+```csharp
+//provide the enum type as a parameter
+var fruits = EnumHelpers.GetMembers(typeof(FruitsEnum));
+```
+
 ### Parse
 
 Parse a string as an enum.

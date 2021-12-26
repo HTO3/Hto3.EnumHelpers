@@ -15,28 +15,43 @@ namespace Hto3.EnumHelpers
         /// <summary>
         /// Gets a dictionary containing in its keys the enums and their value the description text of the enum. The enum should be decorated with <i>DescriptionAttribute</i>.
         /// </summary>
-        /// <typeparam name="T">The enum type</typeparam>
+        /// <typeparam name="T">The enum type.</typeparam>
         /// <returns></returns>
-#if NET40
-        public static IDictionary<T, String> GetMembers<T>() where T : struct
-#else
         public static IReadOnlyDictionary<T, String> GetMembers<T>() where T : struct
-#endif
         {
-            if (!typeof(T).IsEnum)
-                throw new ArgumentException($"The type '{typeof(T).FullName}' is not an enum.");
+            var members = GetMembers(typeof(T));
 
-            var internalDic = new Dictionary<T, String>();
+            var typedMembers = new Dictionary<T, String>();
 
-            foreach (var enumElement in Enum.GetNames(typeof(T)))
+            foreach (var member in members)
+                typedMembers.Add((T)member.Key, member.Value);
+
+            return typedMembers;
+        }
+        /// <summary>
+        /// Gets a dictionary containing in its keys the enums and their value the description text of the enum. The enum should be decorated with <i>DescriptionAttribute</i>.
+        /// </summary>
+        /// <param name="enumType">The enum type.</param>
+        /// <returns></returns>
+        public static IReadOnlyDictionary<Object, String> GetMembers(Type enumType)
+        {
+            if (enumType == null)
+                throw new ArgumentNullException(nameof(enumType));
+
+            if (!enumType.IsEnum)
+                throw new ArgumentException($"The type '{enumType.FullName}' is not an enum.");
+
+            var members = new Dictionary<Object, String>();
+
+            foreach (var enumElement in Enum.GetNames(enumType))
             {
-                var enumValue = (T)Enum.Parse(typeof(T), enumElement);
-                var memberInfo = typeof(T).GetMember(enumElement).First();
+                var enumValue = Enum.Parse(enumType, enumElement);
+                var memberInfo = enumType.GetMember(enumElement).First();
                 var descriptionAttribute = (DescriptionAttribute)Attribute.GetCustomAttribute(memberInfo, typeof(DescriptionAttribute));
-                internalDic.Add(enumValue, descriptionAttribute?.Description ?? enumElement);
+                members.Add(enumValue, descriptionAttribute?.Description ?? enumElement);
             }
 
-            return internalDic;
+            return members;
         }
         /// <summary>
         /// Parse a string as an enum.

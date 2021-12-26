@@ -13,9 +13,9 @@
     <Description>A set of methods for manipulate enums.</Description>
     <RepositoryType>git</RepositoryType>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <AssemblyVersion>1.0.5.0</AssemblyVersion>
-    <FileVersion>1.0.5.0</FileVersion>
-    <Version>1.0.5</Version>
+    <AssemblyVersion>1.0.6.0</AssemblyVersion>
+    <FileVersion>1.0.6.0</FileVersion>
+    <Version>1.0.6</Version>
     <PackageIcon>nuget-logo.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
