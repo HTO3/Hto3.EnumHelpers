@@ -10,6 +10,7 @@ Hto3.EnumHelpers
 [![Downloads](https://img.shields.io/nuget/dt/Hto3.EnumHelpers)](https://www.nuget.org/stats/packages/Hto3.EnumHelpers?groupby=Version)
 [![Build Status](https://github.com/HTO3/Hto3.EnumHelpers/actions/workflows/publish.yml/badge.svg)](https://github.com/HTO3/Hto3.EnumHelpers/actions/workflows/publish.yml)
 [![codecov](https://codecov.io/gh/HTO3/Hto3.EnumHelpers/branch/master/graph/badge.svg)](https://codecov.io/gh/HTO3/Hto3.EnumHelpers)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/644d2e61c30348018efe27a5c62b7218)](https://www.codacy.com/gh/HTO3/Hto3.EnumHelpers/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=HTO3/Hto3.EnumHelpers&amp;utm_campaign=Badge_Grade)
 
 Features
 --------
