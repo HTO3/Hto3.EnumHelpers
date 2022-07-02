@@ -16,6 +16,10 @@ Features
 --------
 Helpers methods to handle enums solving common dev problems.
 
+Related projects:
+----------------
+https://github.com/TylerBrinkley/Enums.NET Enums.NET is a high-performance type-safe .NET enum utility library which provides many operations as convenient extension methods. It is compatible with .NET Framework 4.5+ and .NET Standard 1.0+.
+
 ### GetMembers
 
 Gets a dictionary containing in its keys the enums and their value the description text of the enum. The enum should be decorated with <i>DescriptionAttribute</i>.
